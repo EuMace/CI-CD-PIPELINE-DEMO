@@ -16,12 +16,20 @@ pipeline {
             post {
 		success {
 		    echo "Starting the archive process"
-	  	  archiveArtifacts artifacts: '**/*.war'
+	  	    archiveArtifacts artifacts: '**/*.war'
 		
 		    }
 
                }
           }
-    
+    		
+		stage('Deploy application') {
+		   steps {
+			 build job: 'Application-Deployment-Job'
+
+		  }
+
+	  }
+
      }
 }
