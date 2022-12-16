@@ -6,7 +6,7 @@
   
 <h3>Hope you have enjoyed the learning</h3> 
   
-<h3>Christmas is next week</h3>   
+<h3>Christmas time</h3>   
 
 </body>
 </html>
